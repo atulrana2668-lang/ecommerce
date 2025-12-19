@@ -40,8 +40,8 @@ const Footer: React.FC = () => {
                         <h4 className={styles.sectionTitle}>Quick Links</h4>
                         <ul className={styles.linkList}>
                             <li><Link href="/products">All Products</Link></li>
-                            <li><Link href="/products?category=Men">Men's Fashion</Link></li>
-                            <li><Link href="/products?category=Women">Women's Fashion</Link></li>
+                            <li><Link href="/products?category=Men">Men&apos;s Fashion</Link></li>
+                            <li><Link href="/products?category=Women">Women&apos;s Fashion</Link></li>
                             <li><Link href="/about">About Us</Link></li>
                         </ul>
                     </div>

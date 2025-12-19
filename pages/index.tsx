@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
@@ -80,7 +81,7 @@ export default function Home() {
                                 Shop Now
                             </Link>
                             <Link href="/products?category=Women" className="btn btn-outline">
-                                Women's Collection
+                                Women&apos;s Collection
                             </Link>
                         </div>
                     </div>
@@ -126,16 +127,16 @@ export default function Home() {
                         <div className={styles.categoriesGrid}>
                             <Link href="/products?category=Men" className={styles.categoryCard}>
                                 <div className={styles.categoryImage}>
-                                    <img src="/images/hero_male_model_1766164077598.png" alt="Men's Fashion" className={styles.catImg} />
+                                    <Image src="/images/hero_male_model_1766164077598.png" alt="Men's Fashion" className={styles.catImg} width={400} height={500} />
                                 </div>
-                                <h3 className={styles.categoryName}>Men's Fashion</h3>
+                                <h3 className={styles.categoryName}>Men&apos;s Fashion</h3>
                                 <p className={styles.categoryDesc}>Explore Collection →</p>
                             </Link>
                             <Link href="/products?category=Women" className={styles.categoryCard}>
                                 <div className={styles.categoryImage}>
-                                    <img src="/images/hero_female_model_1766164095781.png" alt="Women's Fashion" className={styles.catImg} />
+                                    <Image src="/images/hero_female_model_1766164095781.png" alt="Women's Fashion" className={styles.catImg} width={400} height={500} />
                                 </div>
-                                <h3 className={styles.categoryName}>Women's Fashion</h3>
+                                <h3 className={styles.categoryName}>Women&apos;s Fashion</h3>
                                 <p className={styles.categoryDesc}>Explore Collection →</p>
                             </Link>
                         </div>

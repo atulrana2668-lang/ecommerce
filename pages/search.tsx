@@ -54,7 +54,7 @@ export default function Search() {
             <main className={styles.main}>
                 <div className="container">
                     <h1 className={styles.pageTitle}>
-                        Search Results for "{q}"
+                        Search Results for &quot;{q}&quot;
                     </h1>
                     <p className={styles.resultCount}>
                         {searchResults.length} {searchResults.length === 1 ? 'product' : 'products'} found

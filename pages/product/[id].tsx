@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getProductById, addToCart, addToWishlist, removeFromWishlist, isInWishlist, getCartItemCount, getWishlist } from '@/utils/storage';
@@ -100,7 +101,7 @@ export default function ProductDetail() {
                         {/* Product Images */}
                         <div className={styles.imageSection}>
                             <div className={styles.mainImage}>
-                                <img src={product.image} alt={product.name} className={styles.productImg} />
+                                <Image src={product.image} alt={product.name} className={styles.productImg} width={500} height={600} />
                                 {product.discount && (
                                     <div className={styles.discountBadge}>
                                         {product.discount}% OFF

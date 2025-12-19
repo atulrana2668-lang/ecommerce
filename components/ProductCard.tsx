@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './ProductCard.module.css';
 
 interface ProductCardProps {
@@ -34,7 +35,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     return (
         <div className={styles.card}>
             <Link href={`/product/${id}`} className={styles.imageContainer}>
-                <img src={image} alt={name} className={styles.productImage} />
+                <Image src={image} alt={name} className={styles.productImage} width={300} height={400} />
                 {discount && (
                     <div className={styles.discountBadge}>
                         {discount}% OFF

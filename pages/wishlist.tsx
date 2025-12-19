@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
@@ -57,9 +58,9 @@ export default function Wishlist() {
                             <div className={styles.emptyIcon}>❤️</div>
                             <h2>Your Wishlist is Empty</h2>
                             <p>Save your favorite items to buy them later!</p>
-                            <a href="/products" className="btn btn-primary">
+                            <Link href="/products" className="btn btn-primary">
                                 Explore Products
-                            </a>
+                            </Link>
                         </div>
                     ) : (
                         <div className="grid grid-4">
